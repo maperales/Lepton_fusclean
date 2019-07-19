@@ -1,0 +1,24 @@
+// Programa de fusión de imágenes
+Pasos:
+1. Encontrar Lepton
+2. Encontrar webcam
+	Ver resolución de la webcam
+3. Rotar webcam
+4. en el bucle while:
+	Leer webcam
+	Leer Lepton
+	Rotar webcam
+	escalar y mover webcam (param. variables)
+	Escalar lepton
+	fusionar 
+	Leer teclas
+	si w: subir webcam 1
+	si s: bajar webcam 1
+	si a: izqda webcam 1
+	si d: dcha webcam 1
+	si o: zoom out 1%
+	si l: zoom in 1%
+	si esc: salir
+5. Al salir, mostrar centro y zoom.
+	
+	
