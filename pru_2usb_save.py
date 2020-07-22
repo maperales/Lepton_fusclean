@@ -39,6 +39,7 @@ else:
 
 DX=0
 DY=0
+num=0
 while rval and rval2:
     res = cv2.resize(framet,None,fx=4, fy=4, interpolation = cv2.INTER_CUBIC)
     filas,cols,kk=frame.shape
@@ -65,9 +66,10 @@ while rval and rval2:
     if key == 100:
         DX = DX+10
     if key == 103:
-        cv2.imwrite('orig.jpg', framer)
-        cv2.imwrite('termica.jpg', res)
-        cv2.imwrite('mix.jpg',dst)
+        num=num+1
+        cv2.imwrite('orig%d.jpg' %num, framer)
+        cv2.imwrite('termica%d.jpg' %num, res)
+        cv2.imwrite('mix%d.jpg' %num,dst)
     if key == 27: # exit on ESC
         break
 cv2.destroyAllWindows()
